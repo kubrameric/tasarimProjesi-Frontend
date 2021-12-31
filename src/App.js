@@ -42,7 +42,7 @@ export default function App() {
         >
           <div
             className="site-layout-background"
-            style={{ padding: 24, minHeight: 380 }}
+            style={{ padding: 24, minHeight: 120, width:500 }}
           ></div>
           <Switch>
             <Route exact path="/" component={Home}></Route>

@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import AuthService from "../services/AuthService";
 
+
+
+
 const Home = () => {
   const [credentials, setCredentials] = useState({});
   const history = useHistory();
@@ -25,8 +28,12 @@ const Home = () => {
       [event.target.name]: event.target.value
     });
   };
+
+
+  
   return (
-    <div className="loginBody">
+    <div className="loginBody" style={{"maxWidth" :"400px","display":"flex","justifyContent": 'center',"margin":"0 auto 0 auto"}}>
+
       <Form
         className="loginForm"
         name="basic"
